@@ -1,0 +1,21 @@
+plugins {
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '4.0.4'
+}
+
+mainClassName = 'me.duncte123.pingtest.Main'
+
+version '1.0'
+
+sourceCompatibility = 11
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile group: 'net.dv8tion', name: 'JDA', version: '4.0.0_77'
+}
+
+compileJava.options.encoding = 'UTF-8'
